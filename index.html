@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+    <section class="p-5">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-7">
+                                <div class="inputHolder">
+                                    <div class="mb-3">
+                                        <input type="text" class="form-control" id="nameInput" placeholder="Enter Your Name">
+                                      </div>
+                                    <div class="mb-3">
+                                        <input type="date" class="form-control" id="DateInput" placeholder="Enter Date You Buy">
+                                      </div>
+                                    <div class="mb-3">
+                                        <input type="text" class="form-control" id="AmountInput" placeholder="Enter Amount ">
+                                      </div>
+                                      <button  class="btn btn-outline-primary " id="AddDetails">AddDetails</button>
+                                      <button class="btn btn-outline-warning d-none " id="EditDetails">Edit</button>
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <canvas id="myChart"></canvas>
+                            </div>
+                        </div>
+                        <div class="col-md-7 my-4">
+                            <div class="mb-3">
+                                <input type="search" class="form-control" id="searchInput" placeholder="Search">
+                              </div>
+                        </div>
+                    </div>
+    </section>
+
+    <section class="tableSection"> 
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="holder text-capitalize  ">
+                                    <table class="table table-hover text-center   " >
+                                        <thead>
+                                          <tr>
+                                            <th scope="col">ID</th>
+                                            <th scope="col" class="">name</th>
+                                            <th scope="col" class="">date</th>
+                                            <th scope="col" class="">transactions</th>
+                                            <th scope="col" class="">Delete</th>
+                                            <th scope="col" class="">edit</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody id="tableBody">
+                                           
+                                        </tbody>
+                                      </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+     </section>
+
+
+
+<body>
+    
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>   
+    <script src="chart.js" ></script>   
+    <script src="main.js" type="module"></script>  
+
+
+</body>
+</html>
